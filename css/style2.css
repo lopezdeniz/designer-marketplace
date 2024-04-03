@@ -1,0 +1,280 @@
+body{
+                                                                 background: -webkit-linear-gradient(179deg, #10102f,#0f0217);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(179deg, #10102f,#0f0217);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                                                                             }
+
+
+
+
+/* Vidget  */
+
+.pulse-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    box-shadow: 0 5px 35px #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1000;
+    margin-right: -38px;
+
+}
+.pulse-button__rings {
+    border: 1px solid  #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    animation-duration: 2.0s;
+    animation-name: pulse_1;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+
+
+
+.pulse-button__rings:nth-child(2) {
+    animation-name: pulse_2;
+}
+.pulse-button__rings:nth-child(3) {
+    animation-name: pulse_3;
+}
+@keyframes pulse_1 {
+    from {
+        opacity: 1;
+        transform: scale(0.9, 0.9);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.3, 1.3);
+    }
+}
+@keyframes pulse_2 {
+    from {
+        opacity: 1;
+        transform: scale(0.8, 0.8);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.5, 1.5);
+    }
+}
+@keyframes pulse_3 {
+    from {
+        opacity: 1;
+        transform: scale(0.8, 0.8);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.7, 1.7);
+    }
+}
+
+.modal-content {
+box-shadow: -5px 5px 25px #fff;
+}
+
+
+.test22 {
+margin: -40px 0 0 -30px;
+}
+
+
+
+/* Vidjet fin  */
+
+.card {
+    background: linear-gradient(to right, hsl(0deg 0% 100% / 5%), hsl(0deg 0% 100% / 5%));
+    box-shadow: -5px 5px 25px #fff;
+    border: #fff;
+  
+    
+   
+}
+
+.card 1 {
+    background: linear-gradient(to right, hsl(0deg 0% 100% / 5%), hsl(0deg 0% 100% / 5%));
+    box-shadow: -5px 5px 25px #fff;
+    border: #fff;
+  
+    
+   
+}
+
+/* Kards */
+.card:hover {
+
+}
+
+.card:active {
+ 
+}
+
+/* test */
+
+/* Стили для кнопки */
+.btn {
+  border: #fff;
+  border-radius: 18px;
+  padding: 5px 20px;
+  background: linear-gradient(120deg, #cd00cd, #8b00ff); /* Градиентный фон кнопки для объемного эффекта */
+  color: #fff; /* Белый цвет текста на кнопке */
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  padding: 10px; /* Отступы внутри кнопки */
+  box-shadow: 0px 1px 10px #fff; /* Добавляем тень для трехмерного эффекта */
+}
+
+.btn-1 {
+ border: #fff;
+  border-radius: 18px;
+  padding: 5px 20px;
+  background: linear-gradient(120deg, #ffed00, #fde910); /* Градиентный фон кнопки для объемного эффекта */
+  color: #fff; /* Белый цвет текста на кнопке */
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  padding: 10px; /* Отступы внутри кнопки */
+  box-shadow: 0px 1px 10px #fff; /* Добавляем тень для трехмерного эффекта */
+  text-decoration: none;
+}
+
+/* Стили для создания блика на кнопке */
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%, /* Прозрачность начала блика */
+    rgba(255, 255, 255, 0.8), /* Цвет блика */
+    rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+  );
+  top: 0;
+  left: -100px;
+  animation: shine 2s infinite linear; /* Анимация блика */
+}
+
+.btn-1:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%, /* Прозрачность начала блика */
+    rgba(255, 255, 255, 0.8), /* Цвет блика */
+    rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+  );
+  top: 0;
+  left: -100px;
+  animation: shine 2s infinite linear; /* Анимация блика */
+}
+
+/* Ключевые кадры для анимации блика */
+@keyframes shine {
+  0% {
+    left: -100px; /* Начальная позиция блика (левая сторона кнопки) */
+  }
+  20% {
+    left: 100%; /* Позиция блика в конце (правая сторона кнопки) */
+  }
+  100% {
+    left: 100%; /* Завершение анимации */
+  }
+}
+
+.fa {
+color: white;
+text-decoration: none;
+
+}
+
+.fa:hover {
+color: white;
+text-decoration: none;
+}
+
+.nav-item {
+margin: 0 10px 0 0;
+}
+
+.btn-group {
+margin: 0 10px 0 0;
+}
+
+
+
+
+
+/* test */
+
+/* карусель */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+
+.card-1 {
+    background: linear-gradient(to right, hsl(0deg 0% 100% / 5%), hsl(0deg 0% 100% / 5%));
+    border: 1px solid #fff;
+    border-radius: 18px;
+  
+  
+}
+
+
+
+
+/* карусель */
+
+ .card-text-1 {
+  text-align: left;
+
+}
+
+
+.romb {
+margin-right: 5px;
+width: 18px;
+height: 18px;
+}
+
+
+.romb2 {
+margin-right: 5px;
+width: 18px;
+height: 18px;
+
+}
+
